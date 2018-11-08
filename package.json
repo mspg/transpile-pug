@@ -1,5 +1,5 @@
 {
-  "name": "@mspg/pug",
+  "name": "@mspg/transpile-pug",
   "version": "0.0.1",
   "description": "handles pug to html transform in @magic/stasis",
   "main": "src/index.js",
