@@ -1,0 +1,35 @@
+{
+  "name": "@mspg/pug",
+  "version": "0.0.1",
+  "description": "handles pug to html transform in @magic/stasis",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "t",
+    "format": "f",
+    "format:fix": "f -w"
+  },
+  "dependencies": {
+    "@magic/log": "github:magic/log",
+    "html-minifier": "3.5.21",
+    "pug": "2.0.3"
+  },
+  "devDependencies": {
+    "@magic/test": "github:magic/test"
+  },
+  "author": "Wizards & Witches",
+  "license": "AGPL-3.0",
+  "contributors": [
+    {
+      "name": "jascha ehrenreich",
+      "github": "jaeh"
+    },
+    {
+      "name": "philipp tiefenbacher",
+      "github": "wizard23"
+    },
+    {
+      "name": "tom peak",
+      "github": "tompeak"
+    }
+  ]
+}
