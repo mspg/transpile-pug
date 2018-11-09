@@ -13,8 +13,11 @@ env:
 matrix:
   fast_finish: true
 
+install:
+  - npm install
+
 script:
-  - npm run test
+  - npm test
 
 after_success:
   - npm run coveralls
