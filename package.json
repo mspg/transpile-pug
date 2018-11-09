@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@magic/log": "github:magic/log",
+    "@magic/types": "github:magic/types",
     "html-minifier": "3.5.21",
     "pug": "2.0.3"
   },
