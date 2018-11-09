@@ -6,7 +6,8 @@
   "scripts": {
     "test": "t",
     "format": "f",
-    "format:fix": "f -w"
+    "format:fix": "f -w",
+    "coveralls": "nyc report --reporter=text-lcov | coveralls"
   },
   "dependencies": {
     "@magic/log": "github:magic/log",

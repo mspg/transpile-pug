@@ -1,0 +1,20 @@
+language: cpp
+
+os:
+  - linux
+  - osx
+
+env:
+  matrix:
+    - NODE_VERSION="8"
+    - NODE_VERSION="9"
+    - NODE_VERSION="10"
+
+matrix:
+  fast_finish: true
+
+script:
+  - npm run test
+
+after_success:
+  - npm run coveralls
