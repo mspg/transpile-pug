@@ -1,4 +1,7 @@
-language: cpp
+language: node_js
+
+node_js:
+  - "10"
 
 os:
   - linux
@@ -6,8 +9,6 @@ os:
 
 env:
   matrix:
-    - NODE_VERSION="8"
-    - NODE_VERSION="9"
     - NODE_VERSION="10"
 
 matrix:
@@ -15,9 +16,10 @@ matrix:
 
 install:
   - npm install
+  - npm link
 
 script:
   - npm test
 
 after_success:
-  - npm run coveralls
+  - npm run calls
