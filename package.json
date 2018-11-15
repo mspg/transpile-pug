@@ -7,7 +7,11 @@
     "test": "t",
     "format": "f",
     "format:fix": "f -w",
-    "coveralls": "nyc report --reporter=text-lcov | coveralls"
+    "coveralls": "nyc report --reporter=text-lcov | coveralls",
+    "build": "NODE_ENV=production mspg build zip",
+    "publish": "NODE_ENV=production mspg build zip publish",
+    "connect": "mspg connect",
+    "dev": "mspg build watch serve"
   },
   "dependencies": {
     "@magic/log": "github:magic/log",
@@ -16,7 +20,8 @@
     "pug": "2.0.3"
   },
   "devDependencies": {
-    "@magic/test": "github:magic/test"
+    "@magic/test": "github:magic/test",
+    "@mspg/core": "github:mspg/core"
   },
   "author": "Wizards & Witches",
   "license": "AGPL-3.0",
