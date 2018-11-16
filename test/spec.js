@@ -12,7 +12,8 @@ const templateString = `
 const templateBuffer = fs.readFileSync(path.join(__dirname, 'includes', 'test.pug'))
 
 const expect = '<div class="c"><div class="class" id="id" data-wr="/">/testing</div></div>'
-const expectRooted = '<div class="c"><div class="class" id="id" data-wr="/root">/testing</div></div>'
+const expectRooted =
+  '<div class="c"><div class="class" id="id" data-wr="/root">/testing</div></div>'
 
 const config = {
   dev: {

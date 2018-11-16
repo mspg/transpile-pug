@@ -9,13 +9,9 @@ const render = util.promisify(pug.render)
 
 const PUG = async ({ buffer, config }) => {
   const { ENV } = config
-  config.HTML_DIR = config.HTML_DIR
-    ? config.HTML_DIR
-    : '/'
+  config.HTML_DIR = config.HTML_DIR ? config.HTML_DIR : '/'
 
-  config.WEB_ROOT = ENV === 'production' && config.WEB_ROOT
-    ? config.WEB_ROOT
-    : '/'
+  config.WEB_ROOT = ENV === 'production' && config.WEB_ROOT ? config.WEB_ROOT : '/'
 
   try {
     if (is.empty(buffer)) {
@@ -33,8 +29,7 @@ const PUG = async ({ buffer, config }) => {
     const html = await render(buffer, { basedir: config.HTML_DIR, ...config })
     const minified = await minify(html)
     return minified
-  }
-  catch(e) {
+  } catch (e) {
     throw e
   }
 }
