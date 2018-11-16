@@ -1,4 +1,4 @@
-#### mspg-pug
+#### @mspg/transpile-pug
 
 [![NPM version][npm-image]][npm-url]
 [![Linux Build Status][travis-image]][travis-url]
@@ -14,7 +14,7 @@ npm install @mspg/transpile-pug
 ```
 
 ##### Usage:
-First set up a [mspg](https://github.com/mspg/core) project.
+First set up a [mspg][core-url] project.
 
 then, in src/config.js
 ```javascript
@@ -27,12 +27,17 @@ then, in src/config.js
   }
 ```
 
-You should not have to rename the html files in the /src directory,
+You should not rename the html files in the /src directory,
 you can just use pug in them now.
 
-You can also use the /includes/html directory to create *.pug files and include/extend them from the html files in /src.
+You can also use the /includes/html directory to create *.pug files
+and include/extend them from the html files in /src.
 
-Example app will be linked here soon
+minimal example app is in the [example][example-url] directory of this repository,
+using [config.js][config-url] from the root directory
+
+this example is published to the [gh-pages][gh-pages] branch.
+it is hosted @ [https://mspg.github.io/transpile-pug][page-url]
 
 [npm-image]: https://img.shields.io/npm/v/@mspg/transpile-pug.svg
 [npm-url]: https://www.npmjs.com/package/@mspg/transpile-pug
@@ -42,3 +47,8 @@ Example app will be linked here soon
 [appveyor-url]: https://ci.appveyor.com/project/jaeh/transpile-pug/branch/master
 [coveralls-image]: https://coveralls.io/repos/github/mspg/transpile-pug/badge.svg
 [coveralls-url]: https://coveralls.io/github/mspg/transpile-pug
+[example-url]: https://github.com/mspg/transpile-pug/tree/master/example
+[config-url]: https://github.com/mspg/transpile-pug/blob/master/config.js
+[core-url]: https://github.com/mspg/core
+[gh-pages]: https://github.com/mspg/transpile-pug/tree/gh-pages
+[page-url]: https://mspg.github.io/transpile-pug
