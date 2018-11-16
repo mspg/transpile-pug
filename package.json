@@ -5,8 +5,8 @@
   "main": "src/index.js",
   "scripts": {
     "test": "t",
-    "format": "f",
-    "format:fix": "f -w",
+    "format:check": "f",
+    "format": "f -w",
     "coveralls": "nyc report --reporter=text-lcov | coveralls",
     "build": "NODE_ENV=production mspg build zip",
     "publish": "NODE_ENV=production mspg build zip publish",
