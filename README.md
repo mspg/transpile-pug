@@ -27,16 +27,20 @@ then, in src/config.js
   }
 ```
 
-You should not rename the html files in the /src directory,
+###### src directory stylus
+you should not rename the html files in the /src directory,
 you can just use pug in them now.
 
-You can also use the /includes/html directory to create *.pug files
+###### includes
+You can also use the /includes/html directory to create \*.pug files
 and include/extend them from the html files in /src.
 
-minimal example app is in the [example][example-url] directory of this repository,
+###### example app
+a minimal example app is in the [example][example-url] directory of this repository,
 using [config.js][config-url] from the root directory
 
-this example is published to the [gh-pages][gh-pages] branch.
+###### example app on github.io
+the example app is published to the [gh-pages][gh-pages] branch.
 it is hosted @ [https://mspg.github.io/transpile-pug][page-url]
 
 [npm-image]: https://img.shields.io/npm/v/@mspg/transpile-pug.svg
