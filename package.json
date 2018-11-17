@@ -4,6 +4,7 @@
   "description": "handles pug to html transform in @magic/stasis",
   "main": "src/index.js",
   "scripts": {
+    "start": "t -p",
     "test": "t",
     "format:check": "f",
     "format": "f -w",
