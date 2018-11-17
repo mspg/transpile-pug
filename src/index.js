@@ -1,6 +1,5 @@
 const util = require('util')
 const pug = require('pug')
-const { minify } = require('html-minifier')
 
 const is = require('@magic/types')
 const log = require('@magic/log')
@@ -27,8 +26,7 @@ const PUG = async ({ buffer, config }) => {
     }
 
     const html = await render(buffer, { basedir: config.HTML_DIR, ...config })
-    const minified = await minify(html)
-    return minified
+    return html
   } catch (e) {
     throw e
   }
